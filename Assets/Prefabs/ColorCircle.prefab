@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114187865044330782}
   m_Layer: 0
   m_Name: ColorCircle
-  m_TagString: Circle
+  m_TagString: ColorCircle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,11 +368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameColor: {fileID: 11400000, guid: 194d48ec9fd6fc444ad7ec9ac42025ee, type: 2}
-  renderers:
-  - {fileID: 212867248161839456}
-  - {fileID: 212955244307741348}
-  - {fileID: 212909986663743320}
-  - {fileID: 212331665429907906}
 --- !u!114 &114786924189884750
 MonoBehaviour:
   m_ObjectHideFlags: 1

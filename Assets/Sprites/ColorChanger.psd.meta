@@ -7,7 +7,7 @@ TextureImporter:
     21300004: ColorChanger_2
     21300006: ColorChanger_3
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 6
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -25,6 +25,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -35,7 +37,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -90,9 +92,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 206
-        width: 165
-        height: 165
+        y: 139
+        width: 113
+        height: 113
       alignment: 8
       pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,7 +102,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 410260a95f22c374090f23afba938266
+      spriteID: 47df0b9ce8f0c464b8bc5f08ebfc294b
       vertices: []
       indices: 
       edges: []
@@ -109,10 +111,10 @@ TextureImporter:
       name: ColorChanger_1
       rect:
         serializedVersion: 2
-        x: 203
-        y: 206
-        width: 165
-        height: 165
+        x: 137
+        y: 139
+        width: 113
+        height: 113
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,7 +122,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d499610d58d9f4d9995b56c900ed5e
+      spriteID: 1eb01c6d084411b4ca359fe73ce3323a
       vertices: []
       indices: 
       edges: []
@@ -131,8 +133,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 165
-        height: 165
+        width: 113
+        height: 113
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11fd518334694f6488e4ccfb4cc5b9dc
+      spriteID: 90aaa8d8f48dc6248afe0553b0016661
       vertices: []
       indices: 
       edges: []
@@ -149,10 +151,10 @@ TextureImporter:
       name: ColorChanger_3
       rect:
         serializedVersion: 2
-        x: 203
+        x: 137
         y: 0
-        width: 165
-        height: 165
+        width: 113
+        height: 113
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a131539b9599f4fb7ee9cdef92ddf4
+      spriteID: cf151625c6cc2e44b86911291df75476
       vertices: []
       indices: 
       edges: []
