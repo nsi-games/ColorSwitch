@@ -2,32 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine.SceneManagement;
-
-namespace ColorSwitch
+public class GameManager : MonoBehaviour
 {
-    public class GameManager : MonoBehaviour
+    public Player player;
+    public Transform environment;
+    public Animator ui;
+    
+    public void Play()
     {
-        #region Singleton
-        public static GameManager Instance = null;
-        // Use this for initialization
-        void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-        }
-        private void OnDestroy()
-        {
-            Instance = null;
-        }
-        #endregion
+        // In Game
+        ui.SetBool("InGame", true);
+        player.Play();
+        player.Jump();
+    }
 
-        public void ResetGame()
+    public void Restart()
+    {
+        // No longer in game
+        ui.SetBool("InGame", false);
+
+        // Restart logic for the player
+        player.Restart();
+
+        // Loop through all children in environment
+        for (int i = 0; i < environment.childCount; i++)
         {
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.buildIndex);
+            Transform child = environment.GetChild(i);
+            // Destroy each child
+            Destroy(child.gameObject);
         }
     }
 }

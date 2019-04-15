@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 4932b10956a397c4888ecf3606efed09
+  productGUID: 1badf65339a6e6f479f9ee22393f4fa3
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -617,9 +617,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 37ee6542-f386-4929-84d5-07f9cc8041c0
+  cloudProjectId: 122ec022-d640-4c18-950f-115d57b16b63
   projectName: ColorSwitch
-  organizationId: manny
+  organizationId: nsigameteachers
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

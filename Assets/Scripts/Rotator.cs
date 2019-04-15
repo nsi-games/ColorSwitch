@@ -1,16 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-namespace ColorSwitch
+public class Rotator : MonoBehaviour
 {
-    public class Rotator : MonoBehaviour
+    public float speed = 90f;
+    // Update is called once per frame
+    void Update()
     {
-
-        public float speed = 100f;
-
-        // Update is called once per frame
-        void Update()
-        {
-            transform.Rotate(0f, 0f, speed * Time.deltaTime);
-        }
+        transform.Rotate(Vector3.forward, speed * Time.deltaTime);
     }
 }
