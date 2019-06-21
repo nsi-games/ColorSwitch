@@ -6,21 +6,16 @@ public class GameManager : MonoBehaviour
 {
     public Player player;
     public Transform environment;
-    public Animator ui;
     
     public void Play()
     {
         // In Game
-        ui.SetBool("InGame", true);
         player.Play();
         player.Jump();
     }
 
     public void Restart()
     {
-        // No longer in game
-        ui.SetBool("InGame", false);
-
         // Restart logic for the player
         player.Restart();
 

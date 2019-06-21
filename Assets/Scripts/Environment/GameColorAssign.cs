@@ -5,16 +5,23 @@ using UnityEngine;
 public class GameColorAssign : MonoBehaviour
 {
     public GameColor gameColor;
-    private SpriteRenderer[] renderers;
+    public SpriteRenderer[] renderers;
     
-    void GetRenderers()
+    void Reset()
     {
-        renderers = GetComponentsInChildren<SpriteRenderer>();
+        AssignColors();    
     }
 
     void Start()
     {
-        GetRenderers();
+        AssignColors();
+    }
+
+    void AssignColors()
+    {
+        // Load color Scriptable Object
+        gameColor = Resources.Load<GameColor>("Data/GameColor");
+        renderers = GetComponentsInChildren<SpriteRenderer>();
         for (int i = 0; i < renderers.Length; i++)
         {
             SpriteRenderer rend = renderers[i];
