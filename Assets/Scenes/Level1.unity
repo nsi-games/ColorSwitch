@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -127,10 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1120319522}
     m_Modifications:
-    - target: {fileID: 850914785, guid: f7d12e0e74079a54d890b40aeca28136, type: 3}
-      propertyPath: speed
-      value: -90
-      objectReference: {fileID: 0}
     - target: {fileID: 8479411110334975104, guid: f7d12e0e74079a54d890b40aeca28136,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -316,6 +313,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -414,9 +412,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4bd7ab4303db74bbc3a118f8656f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 15
-  environment: {fileID: 1120319522}
-  colors:
+  m_jumpForce: 10
+  m_environment: {fileID: 1120319522}
+  m_colors:
   - {r: 0.19607843, g: 0.8862745, b: 0.94509804, a: 1}
   - {r: 1, g: 0.9098039, b: 0.05882353, a: 1}
   - {r: 0.54901963, g: 0.07058824, b: 0.9843137, a: 1}
@@ -468,10 +466,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1120319522}
     m_Modifications:
-    - target: {fileID: 850914785, guid: f7d12e0e74079a54d890b40aeca28136, type: 3}
-      propertyPath: speed
-      value: -90
-      objectReference: {fileID: 0}
     - target: {fileID: 8479411110334975104, guid: f7d12e0e74079a54d890b40aeca28136,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -583,8 +577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58c1b86475d16c40a6e4830875915c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 633105939}
-  environment: {fileID: 1120319522}
+  m_player: {fileID: 633105939}
+  m_environment: {fileID: 1120319522}
 --- !u!4 &2140251701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7439021467904923284, guid: e0f5129ebabaafd4cad0979169fe0eb3,
